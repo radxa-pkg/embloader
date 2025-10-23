@@ -6,7 +6,7 @@ on:
 env:
   UPSTREAM_REPO: BigfootACA/embloader
   PROJECT_NAME: embloader
-  FILE_PATTERN: '*_arm64.deb'
+  FILE_PATTERN: '*_{arm64,all}.deb'
 
 permissions:
   contents: write
