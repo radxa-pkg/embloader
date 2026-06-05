@@ -48,4 +48,6 @@ jobs:
           tag_name: ${{ steps.check.outputs.tag }}
           name: ${{ env.PROJECT_NAME }} ${{ steps.check.outputs.tag }}
           body: Synced from https://github.com/${{ env.UPSTREAM_REPO }}/releases/tag/${{ steps.check.outputs.tag }}
-          files: ${{ env.FILE_PATTERN }}
+          files: |
+            ${{ env.FILE_PATTERN }}
+            pkg.conf
